@@ -4,10 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using RestaurantAPI.Models;
 
 namespace RestaurantAPI.Controllers
 {
+    [EnableCors("http://localhost:3000", "*","*")]
     public class RestaurantController : ApiController
     {
         // GET api/values/5
